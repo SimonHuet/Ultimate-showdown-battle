@@ -6,5 +6,6 @@ export class Battle {
       this.monters = monters;
     }
   
+
     method(type) {}
   }
