@@ -1,7 +1,7 @@
-import { player } from "./player.js";
-import { monster } from "./monster.js";
-import { Battle } from "./Actor.js";
+export { player } from "./player.js";
+export { monster } from "./monster.js";
+export { Battle } from "./Actor.js";
 
-function main(){
+export function main(){
     alert("CA MARCHE BLYAT !!")
 }
