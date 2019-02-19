@@ -1,11 +1,11 @@
-import { Actor } from "./Actor.js";
+import { Actor } from './Actor.js'
 
 class player extends Actor {
   constructor(name, image) {
-    super(name, image);
+    super(name, image)
   }
 
   fight() {
-    super.fight();
+    super.fight()
   }
 }
