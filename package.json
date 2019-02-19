@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/SimonHuet/Ultimate-showdown-battle/issues"
   },
-  "homepage": "https://github.com/SimonHuet/Ultimate-showdown-battle#readme"
+  "homepage": "https://github.com/SimonHuet/Ultimate-showdown-battle#readme",
+  "dependencies": {
+    "babel-loader": "^8.0.5",
+    "imports-loader": "^0.8.0",
+    "webpack": "^4.29.5"
+  }
 }
