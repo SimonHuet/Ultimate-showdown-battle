@@ -6,6 +6,7 @@ class monster extends Actor {
   }
 
   fight() {
-    super.fight()
+    super.fight();
+    console.log("Spicy meat");
   }
 }
