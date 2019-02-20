@@ -18,6 +18,7 @@
   "homepage": "https://github.com/SimonHuet/Ultimate-showdown-battle#readme",
   "dependencies": {
     "babel-loader": "^8.0.5",
+    "firebase": "^5.8.3",
     "imports-loader": "^0.8.0",
     "webpack": "^4.29.5"
   }

@@ -1,27 +1,29 @@
-export default class Firebase{
-    constructor(){
-        var config = {
-            apiKey: "AIzaSyCJXZNjVfF-rFROU-Bam7wSfwCzOTfeC6A",
-            authDomain: "ultimate-showdown-battle.firebaseapp.com",
-            databaseURL: "https://ultimate-showdown-battle.firebaseio.com",
-            projectId: "ultimate-showdown-battle",
-            storageBucket: "ultimate-showdown-battle.appspot.com",
-            messagingSenderId: "657628037191"
-        };
+import firebase from 'firebase'
 
-        firebase.initializeApp(config);
-        this.db = firebase.firestore()
+export default class Firebase {
+  constructor() {
+    var config = {
+      apiKey: 'AIzaSyCJXZNjVfF-rFROU-Bam7wSfwCzOTfeC6A',
+      authDomain: 'ultimate-showdown-battle.firebaseapp.com',
+      databaseURL: 'https://ultimate-showdown-battle.firebaseio.com',
+      projectId: 'ultimate-showdown-battle',
+      storageBucket: 'ultimate-showdown-battle.appspot.com',
+      messagingSenderId: '657628037191'
     }
 
-    addUser(data) {
+    firebase.initializeApp(config)
+    this.db = firebase.firestore()
+  }
 
-        return new Promise((resolve, reject)=>{
-            this.db.collection("users").add(data).then(newData =>{
-
-                data.id=newData.id
-                resolve(data)
-            })
+  addUser(data) {
+    return new Promise((resolve, reject) => {
+      this.db
+        .collection('users')
+        .add(data)
+        .then(newData => {
+          data.id = newData.id
+          resolve(data)
         })
-    }
-
+    })
+  }
 }
