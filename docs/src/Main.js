@@ -1,7 +1,7 @@
 import { player } from './class/player.js'
 import { monster } from './class/monster.js'
 import { Battle } from './class/Actor.js'
-import { Firebase } from './../../src/firebaseConfig'
+import { Firebase } from './firebaseConfig'
 
 async function addUserBilly() {
   let db = new Firebase()
