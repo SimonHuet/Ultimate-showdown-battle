@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.2.5",
-    "firebase": "^5.8.3"
+    "firebase": "^5.8.3",
+    "navigo": "^7.1.2"
   }
 }

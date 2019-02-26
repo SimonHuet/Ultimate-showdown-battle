@@ -2,13 +2,14 @@ import * as firebase from 'firebase';
 class FirebaseService {
   constructor() {
     console.log('firebase',firebase);
+    // Initialize Firebase
     var config = {
-      apiKey: "AIzaSyAuSmBgBzEYvWPG4npGxE-vmbeDTcn3eD8",
-      authDomain: "saom-96430.firebaseapp.com",
-      databaseURL: "https://saom-96430.firebaseio.com",
-      projectId: "saom-96430",
-      storageBucket: "saom-96430.appspot.com",
-      messagingSenderId: "83621382337"
+      apiKey: "AIzaSyCJXZNjVfF-rFROU-Bam7wSfwCzOTfeC6A",
+      authDomain: "ultimate-showdown-battle.firebaseapp.com",
+      databaseURL: "https://ultimate-showdown-battle.firebaseio.com",
+      projectId: "ultimate-showdown-battle",
+      storageBucket: "ultimate-showdown-battle.appspot.com",
+      messagingSenderId: "657628037191"
     };
     firebase.initializeApp(config);
     this.db = firebase.firestore();
